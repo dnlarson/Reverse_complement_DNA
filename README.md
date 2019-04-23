@@ -31,8 +31,8 @@ optional arguments:
 Die when wrong file argument is given:
   
   ````
-  ./DNA-example.py -d foo
-  "foo" is not a DNA strand
+$ ./DNA-example.py -d foo
+"foo" is not a DNA strand
 ````
 Note: To start off with a smaller section of the given string, you can view the first 20 characters in DNA.txt by using
 ```` 
