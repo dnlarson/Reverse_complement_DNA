@@ -41,21 +41,6 @@ def get_args():
 # --------------------------------------------------
 def main():
     """main"""
-
-    # dna = 'AAAACCCGGT'
-    # rev = ''
-    # for c in dna:
-    #     if c == 'A':
-    #         rev = 'T' + rev
-    #     elif c == 'C':
-    #         rev = 'G' + rev
-    #     elif c == 'G':
-    #         rev = 'C' + rev
-    #     elif c == 'T':
-    #         rev = 'A' + rev
-    # print(rev)
-
-
     args = get_args()
     outfile = args.outfile
     DNA = args.DNA
@@ -63,13 +48,12 @@ def main():
     if not os.path.isfile(DNA):
         die('"{}" is not a DNA strand'.format(DNA))
 
-    # dna = DNA
     output = ''
 
     with open("DNA.txt", "r") as f:
         DNA = f.readline()
 
-        print(DNA)
+        # print(DNA)
 
         for letter in DNA:
             if letter == 'A':
@@ -80,12 +64,11 @@ def main():
                 output = 'G' + output
             elif letter == 'G':
                 output == 'C' + output
-            
-        print(output)
+            # print(output)
 
-    # with open(outfile, "w") as f:
-    #     f.write(output)
-    #     print('Output file written to "{}"'.format(outfile))
+        with open(outfile, "w") as f:
+            f.write(output)
+            print('Output file written to "{}"'.format(outfile))
 
 
 
