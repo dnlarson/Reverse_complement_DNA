@@ -28,13 +28,18 @@ optional arguments:
                         File of the Reversed DNA strand (default: out.txt)
   -d FILE, --DNA FILE   File with DNA strand (default: DNA.txt)
   ````
-  Die when wrong file argument is given:
+Die when wrong file argument is given:
   
   ````
   ./DNA-example.py -d foo
   "foo" is not a DNA strand
-  ````
-  # Expected Output
+````
+Note: To start off with a smaller section of the given string, you can view the first 20 characters in DNA.txt by using
+```` 
+$ command | cut -c1-20 DNA.txt
+GTCTGCCCCTAGACCAGTAA
+````
+# Expected Output
 ````  
 $ ./DNA-example.py -d DNA.txt
 Output file written to "out.txt"
