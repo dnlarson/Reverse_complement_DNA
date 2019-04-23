@@ -3,7 +3,7 @@ Find the reverse complement of the given DNA strand (ROSALIND SOLUTION)
 
 Nucleic acids are long, chain-like molecules that express one's genetic information. Each nucleic acid contains four of the five bases: Adenine (A), Guanine (G), Cytosine (C), Thymine (T), and Uracil (U). Thymine (T) is found in DNA, while Uracil (U) is found in RNA. In this problem we will be focusing on DNA's complementary pairs: A and T, C and G.
 
-In this problem, you will use import argparse to read in a file called DNA.txt and find the complement of each base in the provided DNA string and reverse it (i.e. "GTCA" is "TGAC"). The output will be written to a default file called "out.txt".
+In this problem, you will use `import argparse` to read in a file called DNA.txt and find the complement of each base in the provided DNA string and reverse it (i.e. "GTCA" is "TGAC"). The output will be written to a default file called "out.txt".
 
 # Expected Behavior
 The DNA string and outfile are both required, so be sure to set `required=True` when creating it with `parser.add_argument` so the program makes a usage statement when no arguments are provided:
@@ -72,9 +72,9 @@ test.py::test_good_input PASSED                                                 
 ================================================ 3 passed in 1.02 seconds =================================================
 ````  
 
-  Contact:
-  Danielle Larson
-  (dnlarson@email.arizona.edu)
+Contact:
+Danielle Larson
+(dnlarson@email.arizona.edu)
   
   
   
