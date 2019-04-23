@@ -35,8 +35,43 @@ optional arguments:
   "foo" is not a DNA strand
   ````
   # Expected Output
-  
-  
+````  
+$ ./DNA-example.py -d DNA.txt
+Output file written to "out.txt"
+$ cat out.txt
+CCAAGTTTAGATGGGCCGAAAAATTTCGCCCGTGATTGCCGGAACTTTAGGAACAAATGCAGTTCAGGTAGGTCA
+TGAATGAGTGGTAGGTAATACTTCACTTCAGGGACGCACGCCCGGATTGTGCAGAACGTACCGCTTGCAAACGGT
+GGGCTGAAAACGTCAGCTGATTACATCATCCATCCGTTTAGAACTTAAACATTGGTCGTCGTAATTCTTAACCTG
+GTCGGGCCAAATGTCCAAACGTCGCTCGACGCACTGACATCACATCTTTAATCCAAGTATAATTCTTAGCCAACG
+GTTCCAAAAGTGTACGCCGCCCATGTGATGCAATGCGTGGTTTTTCGACCGAGGCGTTCTTTAACACAGTTTAGC
+TCAAACTAATGCTGGGCATGGGACGCATTTTCAGAAGTGGTTTGAGTTTGAAAGTCGCTCTTACTGACGTACTGC
+TGAAGGGGATTAATACCTTAATTACACTCTGTTCATTAAAAGTCTGGATGTAGATTGCTTCCCGGCAGAAATGTC
+CGGGTAGCCTGAGATACCCTTACTCACGACGCAGCGATGAAACGTGCGTTCTATTAAAAAGTACACCCGGCCCGA
+CTTGGTCCACGGCATATCAAACAGTAGCAGTCATGCCGATCTAGGATGAGTGGGACGGCTACAGTGTTTAAGGAA
+TATTCCTACGCTGGTGGATGAGCTGCCTTCCTCCGGCTCATAAAGAGCAATCGGAGAGAGGCACATCAACTAACG
+AGCGGCCCCTGGTAGGAACCAGAAGAGTTCAACCGGGTCGCACGGCCGGCTATCATCAGGCTCCAATCTATCTAC
+CCTCCTCTGATGAGCTACATTTCCGAAGTTCCCGAGGGTTTCCGCTCGTATCACTTAAGGAGATGTGAATTTACT
+GGTCTAGGGGCAGAC
+````
+
+# Test Suite
+Passing tests should look like:
+````
+$ make test
+python3 -m pytest -v test.py
+=================================================== test session starts ===================================================
+platform darwin -- Python 3.7.0, pytest-4.1.1, py-1.7.0, pluggy-0.8.1 -- /Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/daniellelarson/Reverse_complement_DNA, inifile:
+collected 3 items                                                                                                         
+
+test.py::test_usage PASSED                                                                                          [ 33%]
+test.py::test_bad_args PASSED                                                                                       [ 66%]
+test.py::test_good_input PASSED                                                                                     [100%]
+
+================================================ 3 passed in 1.02 seconds =================================================
+````  
+
   Contact:
   Danielle Larson
   (dnlarson@email.arizona.edu)
